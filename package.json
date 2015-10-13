@@ -1,6 +1,6 @@
 {
   "name": "task-mule-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Command line runner for task-mule",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,5 +25,8 @@
   "bin": {
     "task-mule": "./bin/task-mule-cli"
   },
-  "preferGlobal": true
+  "preferGlobal": true,
+  "dependencies": {
+    "resolve": "^1.1.6"
+  }
 }

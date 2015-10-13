@@ -4,4 +4,7 @@
 
 process.title = 'task-mule';
 
-require('task-mule')();
+var resolve = require('resolve').sync;
+var taskMulePath = resolve('task-mule', { basedir: process.cwd() });
+
+require(taskMulePath)();
