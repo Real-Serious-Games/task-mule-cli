@@ -1,0 +1,29 @@
+{
+  "name": "task-mule-cli",
+  "version": "0.0.1",
+  "description": "Command line runner for task-mule",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Real-Serious-Games/task-mule-cli.git"
+  },
+  "keywords": [
+    "task",
+    "runner",
+    "javascript",
+    "grunt",
+    "gulp"
+  ],
+  "author": "ashley.davis@realseriousgames.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Real-Serious-Games/task-mule-cli/issues"
+  },
+  "homepage": "https://github.com/Real-Serious-Games/task-mule-cli#readme",
+  "bin": {
+    "task-mule": "./bin/task-mule-cli"
+  },
+  "preferGlobal": true
+}
