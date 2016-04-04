@@ -1,6 +1,6 @@
 {
   "name": "task-mule-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Command line runner for task-mule",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -27,6 +27,7 @@
   },
   "preferGlobal": true,
   "dependencies": {
-    "resolve": "^1.1.6"
+    "resolve": "^1.1.6",
+    "yargs": "^4.3.2"
   }
 }

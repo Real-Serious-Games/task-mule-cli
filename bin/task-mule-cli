@@ -2,9 +2,11 @@
 
 'use strict';
 
+var argv = require('yargs').argv;
+
 process.title = 'task-mule';
 
 var resolve = require('resolve').sync;
-var taskMulePath = resolve('task-mule', { basedir: process.cwd() });
+var taskMulePath = resolve('task-mule', { basedir: argv.taskMulePath || process.cwd() });
 
 require(taskMulePath)();
