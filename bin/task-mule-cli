@@ -9,4 +9,11 @@ process.title = 'task-mule';
 var resolve = require('resolve').sync;
 var taskMulePath = argv.taskMulePath || resolve('task-mule', { basedir: process.cwd() });
 
-require(taskMulePath)();
+try
+{
+	require(taskMulePath)();
+}
+catch (ex) {
+	console.error("Failed to load Task-Mule from path: " + taskMulePath);
+	console.log("Please run 'npm install --save task-mule' to install a local version of task-mule.");
+}
