@@ -7,13 +7,13 @@ var argv = require('yargs').argv;
 process.title = 'task-mule';
 
 var resolve = require('resolve').sync;
-var taskMulePath = argv.taskMulePath || resolve('task-mule', { basedir: process.cwd() });
 
 try
 {
+	var taskMulePath = argv.taskMulePath || resolve('task-mule', { basedir: process.cwd() });
 	require(taskMulePath)();
 }
 catch (ex) {
-	console.error("Failed to load Task-Mule from path: " + taskMulePath);
+	console.error("Failed to load local version of Task-Mule.");
 	console.log("Please run 'npm install --save task-mule' to install a local version of task-mule.");
 }
