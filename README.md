@@ -1,2 +1,5 @@
 # task-mule-cli
-Command line runner for task-mule.
+
+This is the command line runner for [task-mule](https://www.npmjs.com/package/task-mule).
+
+
